@@ -1,8 +1,14 @@
-@import url('https://fonts.googleapis.com/css?family=Source+Serif+Pro');
+@import url('https://fonts.googleapis.com/css?family=Source+Serif+Pro|Lato');
+
+
+html, body { 
+	overflow-x: hidden;
+	margin:0;
+}
 .herobar{
 	padding:2px;
 	border-bottom: 4px solid #f6a406;
-	width:100%;
+	width:101%;
 }
 h1{
 	font-family: 'Source Serif Pro', serif;
@@ -34,6 +40,7 @@ h1{
 	border-radius: 0px;
 	background-color: #7b2005;
 	border:none;
+
 }
 .navbar-inverse .navbar-nav>li>a {
     color: white;
@@ -46,7 +53,11 @@ h1{
     background-color:#c37d6800;
     border-bottom:2px solid #f6a406;
 }
-
+.navbar-inverse .navbar-nav>.active>a:hover{
+    color: #fff;
+    background-color:#c37d6800;
+    border-bottom:2px solid #f6a406;
+}
 .navbar-nav{
 	margin-left:20%;
 	float:none;
@@ -73,6 +84,10 @@ h1{
 }
 .dropdown-menu>li>a{
 	color:white;
+}
+.dropdown-menu>li>a:hover{
+	background: #c37d6800;
+	color:#f6a406;
 }
 .dropdown-menu .divider{
 	background-color:#f6a406;
@@ -105,4 +120,13 @@ h1{
   		top: 0%;
   		transform: translate(0, -50%);
 	}	
+}
+.home-content h3{
+	text-align: justify;
+	font-size: 1.5em;
+	line-height: 1.7em;
+	font-family: 'Lato', sans-serif;
+}
+.home-content img{
+	height:450px;
 }
