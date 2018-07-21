@@ -130,6 +130,20 @@ h1{
 .home-content img{
 	height:400px;
 }
+.desktop{
+	display: block;
+}
+.mobile{
+	display: none;
+}
+@media only screen and (max-width: 600px){
+	.desktop{
+		display: none;
+	}
+	.mobile{
+		display: block;
+	}	
+}
 footer .container-fluid{
 	text-align: left;
 	padding:1px;
