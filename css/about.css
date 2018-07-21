@@ -137,10 +137,25 @@ h2{
 	color: #7b2005;
 	border-bottom: 2px solid #f6a406;
 }
+.desktop{
+	display: block;
+}
+.mobile{
+	display: none;
+}
+@media only screen and (max-width: 600px){
+	.desktop{
+		display: none;
+	}
+	.mobile{
+		display: block;
+	}	
+}
 footer .container-fluid{
 	text-align: left;
 	padding:1px;
 	border-top:2px solid #f6a406;
-	background:#f6a40617;
+	background:#7b2005;
 	margin-top:30px;
+	color: white;
 }

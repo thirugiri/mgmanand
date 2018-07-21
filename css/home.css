@@ -123,8 +123,8 @@ h1{
 }
 .home-content h3{
 	text-align: justify;
-	font-size: 1.5em;
-	line-height: 1.7em;
+	font-size: 1.3em;
+	line-height: 2.1em;
 	font-family: 'Lato', sans-serif;
 }
 .home-content img{
@@ -148,6 +148,7 @@ footer .container-fluid{
 	text-align: left;
 	padding:1px;
 	border-top:2px solid #f6a406;
-	background:#f6a40617;
+	background:#7b2005;
 	margin-top:30px;
+	color: white
 }
