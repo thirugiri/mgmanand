@@ -1,0 +1,8 @@
+footer .container-fluid{
+	text-align: left;
+	padding:1px;
+	border-top:1px solid #080808;
+	background:#80808040;
+	margin-top:30px;
+	color: white;
+}
