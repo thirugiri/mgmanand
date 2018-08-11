@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css?family=Do+Hyeon');
+body{
+	background-color: #050303;
+	background-image: url('../img/test.jpg');
+	background-repeat: no-repeat;
+	background-size: 100% auto;
+	background-position: 80% 5%;
+}
+.dark{
+	height: 100vh;
+	background-color: #050303;
+	opacity: 0.8;
+	margin:0px;
+	width: 100%;
+}
+.container-fluid{
+	margin:0;
+	padding:0;
+}
+.nav{
+	margin-top: 10%;
+}
+.nav-pills>li>a {
+    border-radius: 0px;
+    background: none;
+    font-size: 2em;
+    color:#b3b3b3;
+}
+.nav-pills>li>a:hover {
+    border-radius: 0px;
+    background: none;
+    color:white;
+}
+h1{
+	font-family: 'Do Hyeon', sans-serif;
+	color:#b3b3b3;
+	text-align: center;
+	margin-top: 20%;
+	//margin-left: 60%;
+	border-bottom:4px solid yellow;
+	//padding: 2em;
+	font-size: 11em;
+	width: 0%;
+	animation: appear 1s forwards;
+}
+.social{
+	margin-top: 10%;
+}
+.scroll{
+	text-align: center;
+	margin-top: 8%;
+}
+.scroll .fas{
+	cursor:pointer;
+	border:2px solid #FFF176;
+	border-radius: 100%;
+	padding: 1em;
+	color:white;
+	position: relative;
+	animation: blink 3s infinite;
+}
+@keyframes blink{
+	0%{transform:scale(1);}
+	50%{transform: scale(1.1);}
+}
+@keyframes appear{
+	0%{
+		width:0%;
+	}
+	25%{
+		width: 25%
+	}
+	75%{
+		width: 75%
+	}
+	100%{
+		width: 100%;
+	}
+}
+.social-mobile{
+	display: none;
+}
+@media only screen and (max-width: 600px){
+	.social{
+		display: none;
+	}
+	body{
+		background-size: 100% 100vh;
+		background-position: auto;
+	}
+	h1{
+		font-size: 5em;
+		margin-top:60%;
+	}
+	.social-mobile{
+		display: block;
+		text-align: center;
+		margin-left: 5%;
+	}
+}
