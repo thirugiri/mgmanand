@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Do+Hyeon');
-.container-fluid{
+.content{
 	background-color: #050303;
 	background-image: url('../img/test.jpg');
 	background-repeat: no-repeat;
@@ -14,24 +14,24 @@
 	margin:0px;
 	width: 100%;
 }
-.container-fluid{
+.content{
 	//margin-left:1304px;
 	margin-left: 0px;
 	padding:0;
 	overflow: hidden;
 }
-.nav{
+.content .nav{
 	margin-top: -200%;
 	overflow: hidden;
 	animation: navbarshow 1s 2s forwards;
 }
-.nav-pills>li>a {
+.content .nav-pills>li>a {
     border-radius: 0px;
     background: none;
     font-size: 2em;
     color:#b3b3b3;
 }
-.nav-pills>li>a:hover {
+.content .nav-pills>li>a:hover {
     border-radius: 0px;
     background: none;
     color:white;
@@ -45,7 +45,7 @@ h1{
 	//margin-left: 60%;
 	width: 0%;
 	overflow:hidden;
-	border-bottom:4px solid yellow;
+	border-bottom:4px solid #fbc02d;
 	//padding: 2em;
 	font-size: 11em;
 	transition: 1s;
@@ -60,7 +60,7 @@ h1{
 }
 .scroll .fas{
 	cursor:pointer;
-	border:2px solid #FFF176;
+	border:2px solid #fbc02d;
 	border-radius: 100%;
 	padding: 1em;
 	color:white;

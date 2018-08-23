@@ -84,6 +84,8 @@ p{
   position: relative;
   -webkit-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
   box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
+  margin-left: -1000px;
+  animation: entry 1s forwards;
 }
 .timeline > li > .timeline-panel:before {
   position: absolute;
@@ -127,6 +129,8 @@ p{
 }
 .timeline > li.timeline-inverted > .timeline-panel {
   float: right;
+  margin-right: -1000px;
+  animation: invertentry 1s forwards;
 }
 .timeline > li.timeline-inverted > .timeline-panel:before {
   border-left-width: 0;
@@ -153,6 +157,16 @@ p{
 }
 .timeline-body > p + p {
   margin-top: 5px;
+}
+@keyframes entry{
+	to{
+		margin-left: 0px;
+	}
+}
+@keyframes invertentry{
+	to{
+		margin-right: 0px;
+	}
 }
 @media only screen and (max-width: 600px){
 	.timeline::before{
