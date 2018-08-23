@@ -1,10 +1,11 @@
 @import url('https://fonts.googleapis.com/css?family=Do+Hyeon');
-body{
+.container-fluid{
 	background-color: #050303;
 	background-image: url('../img/test.jpg');
 	background-repeat: no-repeat;
 	background-size: 100% auto;
 	background-position: 80% 5%;
+	//animation: enter 2s forwards;
 }
 .dark{
 	height: 100vh;
@@ -14,11 +15,15 @@ body{
 	width: 100%;
 }
 .container-fluid{
-	margin:0;
+	//margin-left:1304px;
+	margin-left: 0px;
 	padding:0;
+	overflow: hidden;
 }
 .nav{
-	margin-top: 10%;
+	margin-top: -200%;
+	overflow: hidden;
+	animation: navbarshow 1s 2s forwards;
 }
 .nav-pills>li>a {
     border-radius: 0px;
@@ -32,16 +37,19 @@ body{
     color:white;
 }
 h1{
+	cursor: default;
 	font-family: 'Do Hyeon', sans-serif;
 	color:#b3b3b3;
 	text-align: center;
 	margin-top: 20%;
 	//margin-left: 60%;
+	width: 0%;
+	overflow:hidden;
 	border-bottom:4px solid yellow;
 	//padding: 2em;
 	font-size: 11em;
-	width: 0%;
-	animation: appear 1s forwards;
+	transition: 1s;
+	animation: appear 2s .5s forwards;
 }
 .social{
 	margin-top: 10%;
@@ -57,24 +65,32 @@ h1{
 	padding: 1em;
 	color:white;
 	position: relative;
-	animation: blink 3s infinite;
+	margin-top: 400px;
+	animation: arrowappear 1s 2s forwards, blink 3s infinite;
 }
 @keyframes blink{
 	0%{transform:scale(1);}
 	50%{transform: scale(1.1);}
 }
 @keyframes appear{
-	0%{
-		width:0%;
-	}
-	25%{
-		width: 25%
-	}
-	75%{
-		width: 75%
-	}
-	100%{
+	to{
 		width: 100%;
+	}
+}
+@keyframes arrowappear{
+	to{
+		margin-top:0px;
+	}
+}
+@keyframes enter{
+	
+	to{
+		margin-left:0;
+	}
+}
+@keyframes navbarshow{
+	to{
+		margin-top: -10%;
 	}
 }
 .social-mobile{
@@ -84,7 +100,7 @@ h1{
 	.social{
 		display: none;
 	}
-	body{
+	.container-fluid{
 		background-size: 100% 100vh;
 		background-position: auto;
 	}
